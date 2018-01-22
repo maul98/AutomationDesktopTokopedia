@@ -8,7 +8,7 @@ import org.testng.Assert;
 
 //import library.utility2;
 
-public class FirstTestCase {
+public class CheckoutAQUAFuad {
 
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
@@ -26,8 +26,8 @@ public class FirstTestCase {
             System.out.println("Success click on login button");
         //Open Iframe
             driver.switchTo().frame(0);
-            driver.findElement(By.id("inputEmail")).sendKeys("maulana.hasim@tokopedia.com");
-            driver.findElement(By.id("inputPassword")).sendKeys("indonesia");
+            driver.findElement(By.id("inputEmail")).sendKeys("alfadilah.aulya@tokopedia.com");
+            driver.findElement(By.id("inputPassword")).sendKeys("093022aulya");
             driver.findElement(By.id("global_login_btn")).click();
             driver.get("https://staging.tokopedia.com/");
             driver.get("https://staging.tokopedia.com/");
@@ -35,7 +35,17 @@ public class FirstTestCase {
             //Assert.assertTrue(MyAccount.isDisplayed());
             //System.out.println("Success Login as Hana");
             Thread.sleep(3000);
-            driver.get("https://staging.tokopedia.com/zeldaone/mustika-ratu-rose-mawar-body-care-series-2-gram");
+            driver.get("https://staging.tokopedia.com/testingaqua");
+            Thread.sleep(3000);
+            driver.findElement(By.xpath("//*[@id=\"choose-address\"]/span/a/small/b")).click();
+            Thread.sleep(3000);
+            driver.findElement(By.xpath("//*[@id=\"addr-4649608\"]/b")).click();
+            Thread.sleep(3000);
+            driver.findElement(By.id("btn-atc")).click();
+            Thread.sleep(3000);
+            driver.findElement(By.xpath("//*[@id=\"rf\"]/div/button")).click();
+            Thread.sleep(3000);
+            driver.findElement(By.xpath("//*[@id=\"cart-review\"]/a/i")).click();
             Thread.sleep(3000);
             driver.findElement(By.id("btn-checkout")).click();
             Thread.sleep(3000);
@@ -44,7 +54,7 @@ public class FirstTestCase {
             Thread.sleep(3000);
             driver.findElement(By.xpath("//*[@id=\"home\"]/div[2]")).click();
             Thread.sleep(3000);
-            driver.findElement(By.xpath("/html/body/div[6]/a[1]")).click();
+            driver.findElement(By.xpath("/html/body/div[7]/a[1]")).click(); 
             Thread.sleep(10000);
             driver.get("https://staging.tokopedia.com/tx_order_list.pl");
             Thread.sleep(5000);
