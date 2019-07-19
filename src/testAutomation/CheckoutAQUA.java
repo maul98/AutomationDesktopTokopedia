@@ -26,8 +26,8 @@ public class CheckoutAQUA {
             System.out.println("Success click on login button");
         //Open Iframe
             driver.switchTo().frame(0);
-            driver.findElement(By.id("inputEmail")).sendKeys("maulana.hasim@tokopedia.com");
-            driver.findElement(By.id("inputPassword")).sendKeys("indonesia");
+            driver.findElement(By.id("inputEmail")).sendKeys("xxxxxx@gmail.com");
+            driver.findElement(By.id("inputPassword")).sendKeys("xxxxxxxx");
             driver.findElement(By.id("global_login_btn")).click();
             driver.get("https://staging.tokopedia.com/");
             driver.get("https://staging.tokopedia.com/");
